@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Open Sans', sans-serif;
+  }
+}
+
+.priceold{
+  @apply relative
+}
+
+.priceold::before{
+  content: " ";
+  width: 120%;
+  position: absolute;
+  top: 47%;
+  left: -10%;
+  border-top: 1px solid rgba(244, 67, 54, .94)
+}
